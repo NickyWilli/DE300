@@ -1,6 +1,6 @@
 # HW2 Readme file
 
-To run the code...
+To run the code (mounts:terminal stuff)
 
 ## Part 1
 
