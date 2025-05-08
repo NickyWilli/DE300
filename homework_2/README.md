@@ -1,24 +1,16 @@
 # HW2 Readme file
 
-To run the code (mounts:terminal stuff)
+To run the code user needs to first create a docker container for a jupyter notebook. The following steps were taken:
 
-## Part 1
+- Connect to EC2 instance, open github repo, navigate to homework 2 folder
+- vim Dockerfile
+- sudo chmod 666 /var/run/docker.sock
+- docker build -t homework_2 .
+- docker run -p 8888:8888 -v ~/.aws:/home/jovyan/.aws -v ~/Nicky_Williams_DE300/homework_2:/home/jovyan/work homework_2
+- then open http://127.0.0.1:8888/lab in browser and open notebook to edit the ipynb
 
-### Q1 
-- ...
-### Q2
-- ...
-  
-### Q3
-- ...
-
-## Part 2
-
-### Q1
-- ...
-### Q2
-- ...
-### Q3
-- ...
+1. Install required packages (cassandra, etc. if not already on computer) - in the code as well
+2. Running the code will automatically unzip the dataset and load the required CSVs into DuckDB tables (make sure zipped filed is uploaded to computer)
+3. Run the cells one at a time in order provided
 
   
