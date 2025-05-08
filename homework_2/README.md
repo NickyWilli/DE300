@@ -12,5 +12,6 @@ To run the code user needs to first create a docker container for a jupyter note
 1. Install required packages (cassandra, etc. if not already on computer) - in the code as well
 2. Running the code will automatically unzip the dataset and load the required CSVs into DuckDB tables (make sure zipped filed is uploaded to computer)
 3. Run the cells one at a time in order provided
+4. Expected outputs are provided in the pdf with written analysis. Each part 1 question provides the table and graph to support the answers provided. Each part 2 question prints a cassandra table that matches the output from the part 1 questions.
 
   
