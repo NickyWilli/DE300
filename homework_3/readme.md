@@ -1,12 +1,19 @@
-o run the code user needs to first create a docker container for a jupyter notebook. The following steps were taken:
+To run the code user needs to first create a docker container for a jupyter notebook. The following steps were taken:
 
-Connect to EC2 instance, open github repo, navigate to homework 2 folder
+Connect to EC2 instance, open github repo, navigate to homework 3 folder
 vim Dockerfile
 sudo chmod 666 /var/run/docker.sock
-docker build -t homework_2 .
-docker run -p 8888:8888 -v ~/.aws:/home/jovyan/.aws -v ~/Nicky_Williams_DE300/homework_2:/home/jovyan/work homework_2
+docker build -t homework3 .
+docker run -p 8888:8888 -v ~/.aws:/home/jovyan/.aws -v ~/Nicky_Williams_DE300/homework_3:/home/jovyan/work homework_3
 then open http://127.0.0.1:8888/lab in browser and open notebook to edit the ipynb
-Install required packages (cassandra, etc. if not already on computer) - in the code as well
-Running the code will automatically unzip the dataset and load the required CSVs into DuckDB tables (make sure zipped filed is uploaded to computer)
+Install required packages - in the code as well
+Running the code will automatically load requirements as needed
 Run the cells one at a time in order provided
-Expected outputs are provided in the pdf with written analysis. Each part 1 question provides the table and graph to support the answers provided. Each part 2 question prints a cassandra table that matches the output from the part 1 questions.
+Expected outputs:
+
+- Part 1 task 3: A table displaying the first five rows with 2 cols (doc_id, tfidf)
+- Part 2 task 3: Loss from loss_SVM(): 0.999775
+- Part 2 task 4: Top 10 predictions running the loss function on the dataset --> First 10 predictions:
+[-1, -1, -1, 1, -1, 1, -1, -1, 1, -1]
+
+
