@@ -6,7 +6,7 @@ To run the code user needs to first create a docker container for a jupyter note
 
 3. sudo chmod 666 /var/run/docker.sock
 
-4. docker build -t homework3 .
+4. docker build -t homework_3 .
 
 5. docker run -p 8888:8888 -v $(pwd):home/jovyan/.aws -v ~/Nicky_Williams_DE300/homework_3:/home/jovyan/work homework_3
 
